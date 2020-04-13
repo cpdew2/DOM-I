@@ -90,3 +90,14 @@ mainContentP[4].innerHTML = siteContent['main-content']['features-content']
 let mainContentImg = document.getElementById('middle-img');
 mainContentImg.src = siteContent['main-content']['middle-img-src']
 
+//contact info
+let contactInfo = document.querySelector('.contact h4');
+contactInfo.innerHTML = siteContent.contact['contact-h4']
+
+let contactP = document.querySelectorAll('.contact p')
+contactP[0].innerHTML = siteContent.contact['address']
+contactP[1].innerHTML = siteContent.contact['phone']
+contactP[2].innerHTML = siteContent.contact['email']
+
+let footerP = document.querySelector('footer p');
+footerP.innerText = siteContent.footer['copyright']
