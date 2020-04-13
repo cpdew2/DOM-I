@@ -48,4 +48,11 @@ navigation.forEach((item, index) => {
   item.style.color = 'green';
 });
 
+//prepend and append
+const anItem = document.createElement('a')
+anItem.setAttribute('href', '#')
+anItem.textContent = "Opening"
+document.querySelector('nav').prepend(anItem)
+anItem.style.color = 'green';
+
 
