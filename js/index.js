@@ -53,12 +53,12 @@ const anItem = document.createElement('a')
 anItem.setAttribute('href', '#')
 anItem.textContent = "Opening"
 document.querySelector('nav').prepend(anItem)
-anItem.style.color = 'green';
+anItem.style.color = 'red';
 
 const newItem = document.createElement('a')
 newItem.textContent = 'Lines for testing'
 document.querySelector('nav').append(newItem)
-newItem.style.color = 'green';
+newItem.style.color = 'red';
 
 let ctaText = document.querySelector('.cta-text h1')
 ctaText.innerText = siteContent.cta.h1
