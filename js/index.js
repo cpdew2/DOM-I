@@ -55,4 +55,22 @@ anItem.textContent = "Opening"
 document.querySelector('nav').prepend(anItem)
 anItem.style.color = 'green';
 
+const newItem = document.createElement('a')
+newItem.textContent = 'Lines for testing'
+document.querySelector('nav').append(newItem)
+newItem.style.color = 'green';
+
+let ctaText = document.querySelector('.cta-text h1')
+ctaText.innerText = siteContent.cta.h1
+
+let ctaButton = document.querySelector('.cta-text button')
+ctaButton.innerText = siteContent.cta.button
+
+//images
+let ctaImg = document.getElementById('cta-img');
+ctaImg.setAttribute('src', siteContent['cta'] ['img-src'])
+
+let middleImg = document.getElementById('middle-img');
+middleImg.src = siteContent['img-src']
+
 
